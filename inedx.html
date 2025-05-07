@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./scss/all.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <ul class="d-flex justify-content-center list-unstyled w-100 gap-5 mb-0">
+        <li><a class="text-decoration-none" href="#">首頁</a></li>
+        <li><a class="text-decoration-none" href="#">部落格</a></li>
+      </ul>
+    </nav>
+
+    <div class="part1">
+      <div class="container-fluid px-0">
+        <div class="row g-0">
+          <div class="col-12 col-md-6">
+            <img src="./img/p1.jpg" class="img-fluid w-100" alt="人物照片" />
+          </div>
+          <div class="col-12 col-md-6 position-relative">
+            <img
+              src="./img/p2.jpg"
+              class="img-fluid w-100 img-sm-h-20"
+              alt="背景照片"
+            />
+            <!-- 將BLOG跟P標籤的文字放在背景圖上面-->
+            <div
+              class="position-absolute d-flex flex-column justify-content-start align-items-start top-50 start-10 translate-middle-y"
+            >
+              <h1 class="theme-color fw-900 display-1 display-md-1">BLOG</h1>
+              <p class="theme-color fw-700 fs-5">前端工程師 & 職涯諮詢師</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="part2" style="border: 2px solid #6c757d">
+      <div class="container-fluid px-0">
+        <!-- align-items-stretch 所有子元素在交叉軸上自動撐滿 Flex 容器的高度或寬度-->
+        <div class="row g-0 align-items-stretch">
+          <div class="col-12 col-md-6">
+            <img
+              src="./img/p3.jpg"
+              alt="電腦"
+              class="img-fluid w-100 h-100 object-fit-cover"
+            />
+          </div>
+          <div class="col-12 col-md-6 d-flex align-items-center">
+            <div class="web-center p-5 p-sm-3">
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <time class="d-block mb-2">2024/10/11</time>
+                  <div
+                    class="tag d-flex align-items-center flex-wrap gap-2 py-1 mb-2"
+                  >
+                    <span class="fs-5 theme-color fw-600"
+                      >前端開發 x 職涯成長</span
+                    >
+                    <a
+                      class="btn btn-primary btn-sm rounded-pill fw-semibold fs-7"
+                      href="#"
+                      >最新文章</a
+                    >
+                  </div>
+
+                  <h4 class="py-2 fw-700 fs-4 fs-md-2">
+                    自學前端不用怕：從零開始的三大關鍵
+                  </h4>
+                  <p class="mb-3 fw-normal fs-7 fs-md-5 text-ellipsis-sm">
+                    嗨，我是
+                    Alyse，一名前端工程師兼職涯諮詢師。一直以來，我都很喜歡在部落格分享學習與工作心得，也常有讀者問：「我想轉職/自學前端，該從哪裡開始？」
+                  </p>
+                  <a class="btn btn-secondary btn-sm" href="./blog-detail.html"
+                    >閱讀內文</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="part3">
+      <div class="search">
+        <div
+          class="search-bar rounded-pill border border-dark d-flex align-items-center px-3 py-2"
+        >
+          <i class="bi bi-search me-2 fs-4"></i>
+          <input
+            type="text"
+            class="form-control border-0 shadow-none"
+            placeholder="搜尋你感興趣的文章"
+          />
+        </div>
+      </div>
+      <div class="blog">
+        <ul class="row list-unstyled g-4">
+          <li class="col-md-4 d-flex flex-column">
+            <img
+              src="./img/picture1.jpg"
+              class="img-fluid mb-3 h200"
+              alt="React 入門"
+            />
+            <div class="d-flex flex-column">
+              <time>2024/10/11</time>
+              <div class="mb-1">
+                <a href="#" class="fs-5 me-2 text-decoration-none theme-color"
+                  >#React</a
+                >
+                <a href="#" class="fs-5 text-decoration-none theme-color"
+                  >#入門基礎</a
+                >
+              </div>
+              <h2 class="h4 fw-700">
+                React 入門不再迷惘：三步驟帶你上手核心概念
+              </h2>
+              <p class="mb-2">
+                你是否對 React
+                感到好奇，卻苦惱於該如何正式啟動學習之路？身為前端工程師兼職涯諮詢師，我常遇到同學問我：
+              </p>
+              <a class="btn-outline-rounded mt-auto align-self-start" href="#"
+                >閱讀內文</a
+              >
+            </div>
+          </li>
+          <li class="col-md-4 d-flex flex-column">
+            <img
+              src="./img/picture2.jpg"
+              class="img-fluid mb-3 h200"
+              alt="前端作品集打造指南"
+            />
+            <div class="d-flex flex-column">
+              <time>2024/09/07</time>
+              <div class="mb-1">
+                <a href="#" class="fs-5 me-2 text-decoration-none theme-color"
+                  >#作品集</a
+                >
+                <a href="#" class="fs-5 text-decoration-none theme-color"
+                  >#求職攻略</a
+                >
+              </div>
+              <h2 class="h4 fw-bold">
+                前端作品集打造指南：讓你的專案成為履歷亮點
+              </h2>
+              <p class="mb-2">
+                對正在求職的前端工程師而言，作品集往往是第一個「說話」的利器。當面試官瀏覽你的網頁作品時，能夠快速了解
+              </p>
+              <a class="btn-outline-rounded mt-auto align-self-start" href="#"
+                >閱讀內文</a
+              >
+            </div>
+          </li>
+          <li class="col-md-4 d-flex flex-column">
+            <img
+              src="./img/picture3.jpg"
+              class="img-fluid mb-3 h200"
+              alt="CSS 魔法大揭密"
+            />
+            <div class="d-flex flex-column">
+              <time>2024/09/03</time>
+              <div class="mb-1">
+                <a href="#" class="fs-5 me-2 text-decoration-none theme-color"
+                  >#CSS設計</a
+                >
+                <a href="#" class="fs-5 text-decoration-none theme-color"
+                  >#視覺體驗</a
+                >
+              </div>
+              <h2 class="h4 fw-700">
+                CSS 魔法大揭密：排版與設計的三大關鍵技巧
+              </h2>
+              <p class="mb-2">
+                在瀏覽器畫面上實現各種精美介面，一直是前端開發充滿成就感的部分。但當面臨複雜的佈局需求或是響應式設計時，
+              </p>
+              <a class="btn-outline-rounded mt-auto align-self-start" href="#"
+                >閱讀內文</a
+              >
+            </div>
+          </li>
+          <li class="col-md-4 d-flex flex-column">
+            <img
+              src="./img/picture4.jpg"
+              class="img-fluid mb-3 h200"
+              alt="前端轉職必讀"
+            />
+            <div class="d-flex flex-column">
+              <time>2024/07/09</time>
+              <div class="mb-1">
+                <a href="#" class="fs-5 me-2 text-decoration-none theme-color"
+                  >#轉職工程師</a
+                >
+                <a href="#" class="fs-5 text-decoration-none theme-color"
+                  >#學習心法</a
+                >
+              </div>
+              <h2 class="h4 fw-700">
+                前端轉職必讀：從自學者到工程師的心路歷程
+              </h2>
+              <p class="mb-2">
+                能夠憑藉自學進入前端領域，聽起來令人振奮，但實際過程中可能遇到的挫折與疑慮，卻常常令人猶豫。回想當初我
+              </p>
+              <a class="btn-outline-rounded mt-auto align-self-start" href="#"
+                >閱讀內文</a
+              >
+            </div>
+          </li>
+          <li class="col-md-4 d-flex flex-column">
+            <img
+              src="./img/picture5.jpg"
+              class="img-fluid mb-3 h200"
+              alt="前端面試不再慌"
+            />
+            <div class="d-flex flex-column">
+              <time>2024/07/08</time>
+              <div class="mb-1 d-flex align-items-center gap-2">
+                <a href="#" class="fs-5 text-decoration-none theme-color"
+                  >#面試準備</a
+                >
+                <a href="#" class="fs-5 text-decoration-none theme-color"
+                  >#工程師求職</a
+                >
+                <a
+                  href="#"
+                  class="btn btn-primary btn-sm rounded-pill fw-semibold fs-6"
+                  >人氣文章</a
+                >
+              </div>
+              <h2 class="h4 fw-700">前端面試不再慌：破解常見提問的三大策略</h2>
+              <p class="mb-2">
+                面試前端工程師時，你或許擔心被問到各種刁鑽的技術題目，或是擔憂無法在短時間內展現實力。其實，許多面試官
+              </p>
+              <a class="btn-outline-rounded mt-auto align-self-start" href="#"
+                >閱讀內文</a
+              >
+            </div>
+          </li>
+          <li class="col-md-4 d-flex flex-column">
+            <img
+              src="./img/picture6.jpg"
+              class="img-fluid mb-3 h200"
+              alt="Vue 3 新手指南"
+            />
+            <div class="d-flex flex-column">
+              <time>2024/06/29</time>
+              <div class="mb-1">
+                <a href="#" class="fs-5 me-2 text-decoration-none theme-color"
+                  >#Vue3</a
+                >
+                <a href="#" class="fs-5 text-decoration-none theme-color"
+                  >#框架學習</a
+                >
+              </div>
+              <h2 class="h4 fw-700">
+                Vue 3 新手指南：快速掌握 Composition API 與關鍵特色
+              </h2>
+              <p class="mb-2">
+                許多前端開發者對 Vue 一直情有獨鍾，因為它易上手又靈活。隨著 Vue
+                3 上線，Composition API 的導入更是大幅
+              </p>
+              <a class="btn-outline-rounded mt-auto align-self-start" href="#"
+                >閱讀內文</a
+              >
+            </div>
+          </li>
+          <li class="col-md-4 d-flex flex-column">
+            <img
+              src="./img/picture7.jpg"
+              class="img-fluid mb-3 h200"
+              alt="Git 與版本控制"
+            />
+            <div class="d-flex flex-column">
+              <time>2024/05/04</time>
+              <div class="mb-1">
+                <a href="#" class="fs-5 me-2 text-decoration-none theme-color"
+                  >#Git</a
+                >
+                <a href="#" class="fs-5 text-decoration-none theme-color"
+                  >#協作流程</a
+                >
+              </div>
+              <h2 class="h4 fw-700">Git 與版本控制：前端協作的必修課</h2>
+              <p class="mb-2">
+                當你從一人開發晉升到多人合作，版本控制的好壞往往決定了專案的順暢度。Git
+                不僅能記錄程式碼變動，更能確保每
+              </p>
+              <a class="btn-outline-rounded mt-auto align-self-start" href="#"
+                >閱讀內文</a
+              >
+            </div>
+          </li>
+          <li class="col-md-4 d-flex flex-column">
+            <img
+              src="./img/picture8.jpg"
+              class="img-fluid mb-3 h200"
+              alt="SEO 與前端最佳實踐"
+            />
+            <div class="d-flex flex-column">
+              <time>2024/05/01</time>
+              <div class="mb-1">
+                <a href="#" class="fs-5 me-2 text-decoration-none theme-color"
+                  >#SEO</a
+                >
+                <a href="#" class="fs-5 text-decoration-none theme-color"
+                  >#網頁曝光</a
+                >
+              </div>
+              <h2 class="h4 fw-700">
+                SEO 與前端最佳實踐：讓搜尋引擎看見你的網站
+              </h2>
+              <p class="mb-2">
+                即使你的網站擁有優美的介面與強大的功能，如果在搜尋引擎上找不到它，那就形同隱形。身為前端工程師，瞭解基本
+              </p>
+              <a class="btn-outline-rounded mt-auto align-self-start" href="#"
+                >閱讀內文</a
+              >
+            </div>
+          </li>
+          <li class="col-md-4 d-flex flex-column">
+            <img
+              src="./img/picture9.jpg"
+              class="img-fluid mb-3 h200"
+              alt="穩定前端環境的祕訣"
+            />
+            <div class="d-flex flex-column">
+              <time>2024/05/04</time>
+              <div class="mb-1">
+                <a href="#" class="fs-5 me-2 text-decoration-none theme-color"
+                  >#專案維護</a
+                >
+                <a href="#" class="fs-5 text-decoration-none theme-color"
+                  >#自動化測試</a
+                >
+              </div>
+              <h2 class="h4 fw-700">
+                穩定前端環境的祕訣：依賴管理與自動化流程
+              </h2>
+              <p class="mb-2">
+                前端世界日新月異，第三方套件與工具種類繁多，一個不留
+              </p>
+              <a class="btn-outline-rounded mt-auto align-self-start" href="#"
+                >閱讀內文</a
+              >
+            </div>
+          </li>
+          <li class="col-md-4 d-flex flex-column">
+            <img
+              src="./img/picture10.jpg"
+              class="img-fluid mb-3 h200"
+              alt="TypeScript 快速上手"
+            />
+            <div class="d-flex flex-column">
+              <time>2024/02/17</time>
+              <div class="mb-1">
+                <a href="#" class="fs-5 me-2 text-decoration-none theme-color"
+                  >#TypeScript</a
+                >
+                <a href="#" class="fs-5 text-decoration-none theme-color"
+                  >#程式設計</a
+                >
+              </div>
+              <h2 class="h4 fw-700">
+                TypeScript 快速上手：強化前端程式碼的安全與可讀性
+              </h2>
+              <p class="mb-2">
+                許多前端開發者在成長過程中都曾面臨動態語言帶來的錯誤
+              </p>
+              <a class="btn-outline-rounded mt-auto align-self-start" href="#"
+                >閱讀內文</a
+              >
+            </div>
+          </li>
+          <li class="col-md-4 d-flex flex-column">
+            <img
+              src="./img/picture11.jpg"
+              class="img-fluid mb-3 h200"
+              alt="掌握前端測試"
+            />
+            <div class="d-flex flex-column">
+              <time>2024/02/07</time>
+              <div class="mb-1">
+                <a href="#" class="fs-5 me-2 text-decoration-none theme-color"
+                  >#測試框架</a
+                >
+                <a href="#" class="fs-5 text-decoration-none theme-color"
+                  >#品質保證</a
+                >
+              </div>
+              <h2 class="h4 fw-700">
+                掌握前端測試：從單元測試到端對端測試的完整攻略
+              </h2>
+              <p class="mb-2">
+                寫程式容易，但要確保程式在多種情境、裝置都能正常運行就沒那麼簡單了。這時「測試」便成了維持程式品質的關鍵
+              </p>
+              <a class="btn-outline-rounded mt-auto align-self-start" href="#"
+                >閱讀內文</a
+              >
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="part4">
+      <div class="pagination-wrapper d-flex justify-content-center py-4">
+        <ul class="pagination rounded-pill px-3 py-2 shadow-sm mb-0">
+          <li class="page-item disabled">
+            <a class="page-link border-0 bg-transparent text-dark" href="#"
+              >&lt;</a
+            >
+          </li>
+          <li class="page-item active">
+            <a
+              class="page-link border-0 bg-transparent text-primary fw-bold"
+              href="#"
+              >1</a
+            >
+          </li>
+          <li class="page-item">
+            <a class="page-link border-0 bg-transparent text-dark" href="#"
+              >2</a
+            >
+          </li>
+          <li class="page-item">
+            <a class="page-link border-0 bg-transparent text-dark" href="#"
+              >3</a
+            >
+          </li>
+          <li class="page-item">
+            <a class="page-link border-0 bg-transparent text-dark" href="#"
+              >4</a
+            >
+          </li>
+          <li class="page-item">
+            <a class="page-link border-0 bg-transparent text-dark" href="#"
+              >5</a
+            >
+          </li>
+          <li class="page-item">
+            <a class="page-link border-0 bg-transparent text-dark" href="#"
+              >...</a
+            >
+          </li>
+          <li class="page-item">
+            <a class="page-link border-0 bg-transparent text-dark" href="#"
+              >&gt;</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="part5 d-flex align-items-center justify-content-between">
+      <div class="email">
+        <span>alysewang@hexschool.com</span>
+      </div>
+      <div class="icon">
+        <ul
+          class="d-flex align-items-center justify-content-center gap-3 list-unstyled"
+        >
+          <li>
+            <a href="#"><i class="bi bi-youtube fs-5"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="bi bi-broadcast-pin fs-5"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="bi bi-facebook fs-5"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="bi bi-linkedin fs-5"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="bi bi-instagram fs-5"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      class="part6 mx-2 my-2 d-flex align-items-center justify-content-center"
+    >
+      <span>© 2025 Alyse Wang. All rights reserved.</span>
+    </div>
+    <script src="./bootstrap.bundle.min.js"></script>
+  </body>
+</html>

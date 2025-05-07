@@ -1,0 +1,152 @@
+//part1部分
+//圖片微調
+@media (max-width: 767.98px) {
+  .img-sm-h-20 {
+    height: 20vh;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+//part2
+
+.nav,
+.part1,
+.part2,
+.part3,
+.part4,
+.part5,
+.part6 {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+//微調 RWD padding的大小
+@media (max-width: 767.98px) {
+  .p-sm-3 {
+    padding: 1rem !important;
+  }
+}
+
+//微調文字敘述內容行數
+@media (max-width: 767.98px) {
+  .text-ellipsis-sm {
+    display: -webkit-box;
+    display: box; /* 新增這行給標準語法 */
+    -webkit-line-clamp: 2;
+    line-clamp: 2; /* 新增這行給標準語法 */
+    -webkit-box-orient: vertical;
+    box-orient: vertical; /* 新增這行給標準語法 */
+    overflow: hidden;
+  }
+}
+
+//微調web版空白的部分
+@media (min-width: 767.98px) {
+  .web-center {
+    max-width: 600px;
+    margin-left: 0 auto;
+  }
+}
+
+//part3
+//微調位置
+
+.part3 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.search {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  .search-bar {
+    max-width: 360px;
+    width: 100%;
+    background-color: #fff;
+  }
+  .search-bar input::placeholder {
+    color: #555;
+    font-weight: 500;
+  }
+}
+
+//bolg修改地方
+
+.h200 {
+  height: 200px;
+}
+
+.btn-outline-rounded {
+  border: 2px solid #000;
+  border-radius: 999px;
+  padding: 0.5rem 1.25rem;
+  color: #000;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 500;
+}
+
+//調整字的多寡
+ul.row p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+}
+
+//par4
+
+.part4 {
+  padding-bottom: 50px;
+  border-bottom: 1px solid #000;
+}
+.pagination-wrapper {
+  background-color: #fff;
+  max-width: fit-content;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+//part5
+
+.part5 {
+  background-color: #fbfbfb;
+  padding: 30px 200px;
+  .email {
+    display: flex;
+    align-items: center;
+    span {
+      font-weight: 500;
+      font-size: 1.2rem;
+    }
+  }
+  .icon {
+    ul {
+      min-height: 80%;
+      margin: 0;
+
+      li {
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1.5rem;
+          color: #0027d5;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .part5 {
+    display: none !important;
+  }
+
+  .part6 {
+    margin: 2rem !important;
+  }
+}
